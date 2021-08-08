@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter -Zomato  </title>
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navbar
+        {
+            background: #ce0505;
+            height: 50px;
+             box-shadow: 0px 2px 10px grey;
+ 
+        }
+        .small-logo
+        {
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            background: white;
+            border-radius: 50%;
+            font-size: 23px;
+            text-align: center;
+            margin: 8px 115px;
+        }
+        .pri-btn
+{
+    float: right;
+    margin-right: 100px;
+    margin-top: -38px;
+}
+
+.L-btn
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px;
+}
+.s-btn{
+    border: 2px solid white;
+    padding: 5px;
+}
+.sec-1
+{
+    display: inline-block;
+    padding: 10px 0px 0px 24px;
+    width: 18%;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    margin: 0px 45px 8px 113px;
+    padding: 20px 10px 25px 10px;
+}
+.filter-secs
+{
+    margin: 0px 11px
+}
+.Heading{
+    color: #192f60;
+    font-size: 36px;
+    margin: 10px 112px;
+}
+.label
+{
+  font-size: 18px;
+  color: #192f60;
+}
+.label-1
+{
+    font-size: 15px;
+  color: #192f60;
+}
+.Location
+{
+    font-size: 13px;
+    padding: 8px 70px 8px 0px;
+    color: darkblue;
+    font-weight: 200;
+}
+.menu-label
+{
+    color: darkblue;
+    font-size: 14px;
+}
+
+.filter-sec
+{
+    display: inline-block;
+   margin: 5px; 
+   color: #8c96ab;
+   font-weight: 200;
+   font-size: 14px;
+}
+#filter-loc
+{
+    padding: 10px 0px;
+}
+.filer-menu-sec
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    
+}
+.menu-sec-2
+{
+    height: 300px;
+    width: 85%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 0px 10px 10px 10px;
+
+    
+}
+.img-sc
+{
+    display: inline-block;
+}
+
+.fl-img
+{
+    height: 120px;
+    width: 120px;
+    margin: 39px;
+    border-radius: 28px;
+    object-fit: cover;
+}
+.img-details
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 35px;
+}
+.img-heading
+{
+    color: #192f60;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 5px;
+}
+.img-sub-heading
+{
+    color: #192f60;
+    font-size: 16px;
+    margin: 5px;
+    
+}
+.img-address
+{
+    color: #636f88;
+    font-size: 16px;
+    margin: 5px;
+    font-weight: 600;
+}
+.filter-name
+{
+    display: inline-block;
+    width: 170px;
+    margin-left: 42px;
+    
+}
+.filter-cost-details
+{
+    display: inline-block;
+    
+
+;
+}
+.txt-color
+{
+    color: #192f60;
+
+
+}
+.filter-page
+{
+    text-align: center;
+}
+.num-sec
+
+{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 1px solid;
+    margin: 10px;
+    text-align: center;
+    border-radius: 7px;
+    color: #8c96ab;
+    padding: 2px;
+    font-size: 20px;
+
+
+}
+.num-sec:first-child
+{
+    border: solid 1px #8c96ab;
+    color: #8c96ab;
+    opacity: 0.4;
+}
+.num-sec:nth-child(2)
+{
+    background-color: #8c96ab;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="nav-logo">
+            <p class="small-logo">e!</p>  </div>
+        <div class="op-btn">
+            <div class="pri-btn"> 
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn">Login</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn  s-btn">Create New Account</a>  
+             </div>
+        </div>
+    </div>
+
+    <div class="Heading">
+        <p>Breakfast  Places in Mumbai</p>
+    </div>
+        <div class="sec-1">
+            
+            <div class="filter-secs">
+                
+            <div class="label"> 
+                 <p>Filter</p>
+            </div>
+            <div class="label-1">
+               <p id="filter-loc">Select Location</p> 
+                <select name="location" id=""  class="Location">
+                  <option value="Select Location">Select Location</option>
+                </select>
+            </div>
+            <div class="checkBox-1">
+                <div class="menu-label">Cuisine</div>
+                <div class="filter-menu"> 
+                    <input type="checkbox" name="North Indian" id="" class="filter-sec">
+                    <p class="filter-sec" >North Indian</p>
+                </div>
+        
+               <div class="filter-menu">
+                <input type="checkbox" name="south Indian" id="" class="filter-sec" ><p  class="filter-sec">South Indian</p>
+               </div>
+               <div class="filter-menu">
+                <input type="checkbox" name="Chinese" id="" class="filter-sec" ><p class="filter-sec">Chinese</p>
+               </div>
+               <div class="filter-menu">
+                <input type="checkbox" name="Chinese" id="" class="filter-sec" ><p class="filter-sec">Chinese</p>
+               </div>
+               <div class="filter-menu">
+                   <input type="checkbox" name="Fast Food" id="" class="filter-sec" ><p class="filter-sec">fast Food</p>
+               </div>
+        
+               <div class="filter-menu">
+                <input type="checkbox" name="Street Food " id="" class="filter-sec"><p class="filter-sec">Street Food</p>
+               </div>
+              
+            </div>
+            <div class="radio-sec">
+                <div class="menu-label">  <p>Cost of two</p> </div>
+                <div class="filter-menu">
+                    <input type="radio" name="price" id="" class="filter-sec"> <p class="filter-sec">Less than 500</p>
+                 </div>
+                   <div class="filter-menu">
+                    <input type="radio" name="price" id="" class="filter-sec"> <p class="filter-sec"> 500 - 1000</p>
+                </div>
+                   <div class="filter-menu">
+                    <input type="radio" name="price" id=""class="filter-sec" > <p class="filter-sec">1000 - 1500</p>
+                </div>
+                   <div class="filter-menu">
+                    <input type="radio" name="sort" id="" class="filter-sec"><p class="filter-sec">Price Low to High</p>
+                   </div>
+            
+                   <div class="filter-menu">
+                    <input type="radio" name="price" id="" class="filter-sec"> <p class="filter-sec">1500 - 2000</p>
+                    </div>
+                    <div class="filter-menu">
+                        <input type="radio" name="price" id=""class="filter-sec"> <p class="filter-sec">2000+</p>
+                    </div>
+            </div>
+            <div class="sort-sec">
+                <div class="menu-label"><p>Sort</p></div>
+                <div class="filter-menu">
+                    <input type="radio" name="sort" id="" class="filter-sec"><p class="filter-sec">Price High to Low</p>
+                </div>
+                <div class="filter-menu">
+                    <input type="radio" name="sort" id="" class="filter-sec"><p class="filter-sec">Price Low to High</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="filer-menu-sec">
+        <div class="menu-sec-2">
+           <div class="filter-img">
+              <div class="img-sc">
+                <img src="/image/breakfast.jpg" alt="" class="fl-img">
+            </div>
+            <div class="img-details">
+                <h2 class="img-heading"> The Big Chill Cakery</h2>
+                <div class="img-sub-heading">FORT</div>
+                <div class="img-address">Shop-1 Plot D Samruddhi Complex Chincholi </div>
+            </div>
+          </div>
+          <hr>
+          <div class="filter-details">
+        <div class="filter-name">
+            <div class="img-address">CUISINES</div>
+            <div class="img-address">COST FOR TWO </div>
+        </div>
+        <div class="filter-cost-details">
+            <div class="img-address txt-color">Bakery</div>
+            <div class="img-address txt-color"> ₹700 </div>
+        </div>
+          </div>
+        </div>
+        <div class="menu-sec-2">
+            <div class="filter-img">
+                <div class="img-sc">
+                  <img src="/image/breakfast.jpg" alt="" class="fl-img">
+              </div>
+              <div class="img-details">
+                  <h2 class="img-heading"> The Bake Shop</h2>
+                  <div class="img-sub-heading">FORT</div>
+                  <div class="img-address">Shop-1 Plot D Samruddhi Complex Chincholi </div>
+              </div>
+            </div>
+            <hr>
+            <div class="filter-details">
+          <div class="filter-name">
+              <div class="img-address">CUISINES</div>
+              <div class="img-address">COST FOR TWO </div>
+          </div>
+          <div class="filter-cost-details">
+              <div class="img-address txt-color">Bakery</div>
+              <div class="img-address txt-color"> ₹700 </div>
+          </div>
+            </div>
+          
+        </div>
+        <div class="filter-page">
+            <div class="num-sec"><i class="fas fa-less-than"></i></div>
+            <div class="num-sec">1</div>
+            <div class="num-sec">2</div>
+            <div class="num-sec">3</div>
+            <div class="num-sec">4</div>
+            <div class="num-sec">5</div>
+            <div class="num-sec"><i class="fas fa-greater-than"></i>    </div>
+        </div>
+     </div>
+    
+   </div>
+</body>
+</html>
