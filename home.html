@@ -7,99 +7,120 @@
     <title>Home  - Zomato</title>
     <!-- css Stylesheet -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     
 </head>
 <body>
    <div class="main-sec">
        <div class="op-btn">
-           <div class="pri-btn"> 
-               <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn">Login</a>
-               <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn  s-btn">Create New Account</a>  
-            </div>
+        <div class="pri-btn"> 
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn">Login</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="L-btn  s-btn">Create New Account</a>  
+    </div>  
+     <div class="logo" >
+      <p class="logo-txt" >e!</p> 
+     </div> 
+     <div class="Tag-line">
+        Discover the best food & drinks  , restaurant, cafes and bars
+     </div>       
+     <div class="search-sec">
+          <div class="location">
+            <i class="fas fa-map-marker-alt location-icon"></i> 
+            <select name="" id="">
+                <option value="">Select the location</option>
+            </select> 
+            <i class="fas fa-horizontal-rule hori-line"></i>
+          </div>
+          <div class="search-bar">
+            <i class="fal fa-search search-icon"></i>
+              <input type="search" name="search" id="" placeholder="Search For Restaurant ">
+          </div>         
+        </div>
        </div>
-      
-          <div class="logo" >
-            <p class="logo-txt" >e! </p> 
-           </div> 
-           <div class="Tag-line" style="padding-top: 20px;">
-                Find the best restaurant, cafes and bars
-           </div>       
-           <div class="search-sec">
-                <div class="location">
-                    <input type="search" name="location " id="" placeholder="Please type a location ">
-                </div>
-                <div class="search-bar">
-                    <input type="search" name="search" id="" placeholder="Search For Restaurant ">
-                </div>
-         </div>
    </div>
-   
+  
+   <div class="container">
 <div class="menu-sec">
     <div class="main-heading">
-        <h3 class="Heading">Quick Searches</h3>
+        <div class="Heading">
+            <p>Quick Searches</p>
+        </div>
         <div class="subheading">
-             Discover-restaurants-by-type-of-meal
+             Discover restaurants by type of meal
         </div>
     </div>
-  
-    <div class="first-sec">
-        <div class="rectangle-sec">
-            <div class="img-sec">
-                <img src="image/breakfast.jpg" alt="" srcset="">
+    <div class="row">   
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec">
+                    <div class="img-sec">
+                        <img src="image/breakfast.jpg" alt="" srcset="">
+                    </div>
+                    <div class="text-sec">
+                        <h3  class="text-1">Breakfast</h3>
+                        <p class="text-2">Start  your day with exclusive breakfast options</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec ">
+                    <div class="img-sec">
+                        <img src="image/lunch.jpg" alt="" srcset="">
+                    </div>
+                    <div class="text-sec">
+                        <h3  class="text-1">Lunch</h3>
+                        <p class="text-2">Start  your day with exclusive breakfast options</p>
+                    </div>
+                </div>
             </div>
-            <div class="text-sec">
-                <h3  class="text-1">Breakfast</h3>
-                <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec "> 
+                    <div class="img-sec">
+                     <img src="image/snacks.jpg" alt="" srcset="">
+                   </div>
+                   <div class="text-sec">
+                     <h3  class="text-1">snacks</h3>
+                     <p class="text-2">Start  your day with exclusive breakfast options</p>
+                   </div>
+               </div>
             </div>
-        </div>
-        <div class="rectangle-sec">
-            <div class="img-sec">
-                <img src="image/lunch.jpg" alt="" srcset="">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec  "> 
+                    <div class="img-sec">
+                     <img src="image/dinner.png" alt="" srcset="">
+                    </div>
+                    <div class="text-sec">
+                        <h3  class="text-1">dinner</h3>
+                        <p class="text-2">Start  your day with exclusive breakfast options</p>
+                    </div>
+                </div>
             </div>
-            <div class="text-sec">
-                <h3  class="text-1">Breakfast</h3>
-                <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec">
+                    <div class="img-sec">
+                        <img src="image/drinks.png" alt="" srcset="">
+                    </div>
+                    <div class="text-sec">
+                        <h3  class="text-1">Drink</h3>
+                        <p class="text-2">Start  your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
             </div>
-        </div>
-        <div class="rectangle-sec"> 
-             <div class="img-sec">
-            <img src="image/snacks.jpg" alt="" srcset="">
-        </div>
-        <div class="text-sec">
-            <h3  class="text-1">Breakfast</h3>
-            <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
-        </div></div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="rectangle-sec ">
+                    <div class="img-sec">
+                        <img src="image/nightlife.png" alt="" srcset="">
+                    </div>
+                    <div class="text-sec">
+                        <h3  class="text-1">Breakfast</h3>
+                        <p class="text-2">Start  your day with exclusive breakfast options</p>
+                    </div>
+                </div>
+            </div>  
+       </div>
     </div>
-    <div class="sen-sec">
-      <div class="rectangle-sec"> 
-           <div class="img-sec">
-            <img src="image/dinner.png" alt="" srcset="">
-           </div>
-    <div class="text-sec">
-        <h3  class="text-1">dinner</h3>
-        <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
-    </div></div>
-      <div class="rectangle-sec">
-        <div class="img-sec">
-            <img src="image/drinks.png" alt="" srcset="">
-        </div>
-        <div class="text-sec">
-            <h3  class="text-1">Drink</h3>
-            <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
-        </div>
-      </div>
-      <div class="rectangle-sec">
-        <div class="img-sec">
-            <img src="image/nightlife.png" alt="" srcset="">
-        </div>
-        <div class="text-sec">
-            <h3  class="text-1">Breakfast</h3>
-            <p class="text-2">Start-your-day-with-exclusive-breakfast-options</p>
-        </div>
-      </div>
-    </div>
-</div>
 
   
    
