@@ -1,5 +1,5 @@
 let express  =  require('express');
-let routes =  require('./route/index');
+let routes =  require('./route/index.js');
 let mongo = require('mongoose');
 let cors = require('cors');
 
