@@ -20,6 +20,18 @@ const restaurantsSchema = new Schema({
         type: Number,
         required: true
 
+    },
+    mealtype_id:{
+        type: Number,
+        required: true
+    },
+    cuisine_id:{
+        type: Array,
+        required: true
+    },
+    min_price:{
+        type:Number,
+        required:true
     }
 })
 

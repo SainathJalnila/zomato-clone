@@ -1,17 +1,17 @@
 let express  =  require('express');
 let routes =  require('./route/index');
 let mongo = require('mongoose');
+let cors = require('cors');
 
 let app = express();
-let port = 7440;
+let port = process.env.PORT || 5456;
 let hostname =  "localhost";
-const dbUrl  = 'mongodb://127.0.0.1:27017/zomatoclone';
 const atlasDbUrl = 'mongodb+srv://SainathJalnila:Honda7440@cluster0.bjk7t.mongodb.net/ZomatoClone?retryWrites=true&w=majority';
 
 
 app.use(express.json());
-
-app.use('/',  routes);
+app.use(cors());
+app.use('/api',  routes);
 
 mongo.connect( atlasDbUrl,{
     
