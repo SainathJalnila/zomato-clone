@@ -18,7 +18,7 @@ mongo.connect( atlasDbUrl,{
 })
  .then(res =>
     {
-        app.listen(port,()=>
+        app.listen(process.env.PORT || 4545,()=>
 {
     console.log(`Server has started ${port} `);
 })
