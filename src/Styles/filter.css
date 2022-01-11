@@ -159,10 +159,7 @@
  background-color: #8c96ab;
  color: white;
  }
- .page-link
- {
-     border-radius: 50%;
- }
+ 
  .page-item
  {
      margin-left: 2%;
@@ -177,6 +174,22 @@
  #icons{
        display: none;
  }
+ #No-data{
+     height: 300px;
+     width: 80%;
+     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+     text-align: center;    
+
+ }
+ #No-data>p {
+   
+    padding-top: 130px;
+    font-size: 30px;
+    color: darkblue;
+    font-family: cursive;
+}
+
+
   @media only screen and (min-width: 735px) and (max-width:1150px) {
      .sec-1 {
         
@@ -227,7 +240,13 @@
      .img-address {
          font-size: 12px;
      }
-     
+     #No-data {
+        height: 240px;
+        width: 70%;
+        margin-left: 125px;
+    }
+    
+    
  
  } 
  
@@ -283,6 +302,15 @@
      font-size: 10px;   
      font-weight: 600;
  }
+ #No-data {
+    height: 150px;
+    width: 100%;
+    margin-left: 100px;
+}
+#No-data>p {
+    padding-top: 70px;
+    font-size: 25px;
+}
  
  }
  

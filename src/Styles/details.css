@@ -1,0 +1,250 @@
+.Image-silder{
+    height:400px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%); 
+    width: 100%;
+    z-index: 2;
+
+}
+.details-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+ .details-img:hover {
+	width: 100%;
+    padding: 2px;
+}
+.gallery-button {
+    padding: 10px 10px;
+    position: relative;
+    float: right;
+    top: -63px;
+    right: 10px;
+    background: #ffffff;
+    cursor: pointer;
+    color: #192f60;
+    opacity: 0.8;
+}
+#gallery-btn
+{
+   margin-bottom: 0rem;  
+    
+}
+.details-heading
+{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 23px;
+}
+#place-btn {
+    float: right;
+    font-size: 18px;
+    margin-right: -220px;
+    margin-top: 14px;
+    border: 2px solid;
+    padding: 5px 10px;
+    background: #ce0505;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.resto-btn{
+    color: darkred;
+    text-transform: uppercase;
+}
+.tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 20px 0 25px;
+    background: white;
+}
+
+.tab {
+    float: left;
+}
+
+.tab label {
+    background: white;
+    padding: 2px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 15px;
+    position: relative;
+    left: 8px;
+    top: -29px;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-top: 1px solid gray;
+    opacity: 0;
+}
+
+[type=radio]:checked~label {
+    background: rgb(255, 255, 255);    
+    border-bottom: solid 4px red;
+}
+
+[type=radio]:checked~label~.content {
+    z-index: 0;
+    opacity: 1;
+}
+
+.button {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 200px;
+    height: 35px;
+    opacity: 0.6;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.heading {
+    width: 298px;
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.about {
+    height: 31px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.head {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.value {
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.btn-order {
+    float: right;
+    width: 170px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #ce0505;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.menu-details
+{
+    margin: 10px 0px;
+}
+.menu-resto-name
+{
+    font-size: 20px;
+    color: darkblue;
+    display: inline-block;
+    vertical-align: top;
+}
+.menu-resto-price
+{
+    font-size: 10px;
+    color: darkblue;
+}
+.menu-resto-desc
+{
+    font-size: 10px;
+    color: darkblue;
+    font-weight: 500;
+
+}
+.menu-img
+{
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: inline-block;
+    
+}
+#menu-add {
+    width: 77px;
+    margin-top: 40px;
+    border: 1px solid red;
+    background: #988b8b14;
+    border-radius: 5px;
+    color: #d80f0f;
+}
+#item-qty{
+    margin: 5px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 600;
+}
+
+#add-sub-btn {
+    width: 25px;
+    background: no-repeat;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .button {
+        position: absolute;
+        left: 55%;
+        top: 40%;
+        width: 200px;
+        height: 35px;
+        opacity: 0.6;
+        border-radius: 3px;
+        background-color: #ffffff;
+    }
+}

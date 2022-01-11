@@ -171,7 +171,100 @@ font-weight: 500;
     font-weight: normal;
 }
 
+.suggestion-sec {
+    background: white;
+    list-style: none;
+    margin-top: 10px;
+    padding: 5px 0px;
+    border-radius: 5px;
 
+    margin-left: 10px;
+    
+}
+.suggestion-sec-img {
+    
+    border-radius: 5px;
+    margin-right: 10px;
+    height:50px;
+    
+}
+.form-input
+{
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+    border: none !important;
+    height: 40px !important;
+}
+
+#login-btn{
+    width: 60%;
+    font-size: 19px;
+    margin-left: 83px;
+    background-color: #CB202D !important;
+    border: none;
+    font-weight: 600;
+}
+#signup-btn
+{
+    width: 60%;
+    font-size: 19px;
+    margin-left: 83px;
+    border: none;
+    font-weight: 600;
+}
+
+.SocialBtn>buttonText{
+  
+    color: darkblue;
+    font-weight: 800;
+}
+
+  .socialBtnFa {
+    
+        height: 50px;
+        width: 48%;
+        vertical-align: top;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #395A9A;
+        color: rgb(255, 255, 255);
+        border: none;
+    }
+    .socialBtnFa > i{
+    
+       margin-right: 5px;
+    }
+    .hr-text {
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color: darkblue;
+        text-align: center;
+        height: 1.5em;
+        opacity: 2;
+      
+        
+      }
+      .hr-text:before {
+        content: '';         
+        background: linear-gradient(to right, transparent, #000000, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+      }
+      .hr-text:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: darkblue;    
+        padding: 0 .5em;
+        line-height: 1.5em;      
+        background-color: #fcfcfa;
+      }
+  
 @media only screen and (min-width: 735px) and (max-width:1150px) {
     .pri-btn{   
         margin-right: 20px;

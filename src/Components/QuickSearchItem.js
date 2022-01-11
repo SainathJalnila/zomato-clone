@@ -1,87 +1,37 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
+import React from "react";
+import { withRouter } from "react-router-dom";
 
 class QuickSearchItem extends React.Component {
-    handleNavigate = () => {
-        this.props.history.push('/filter');
+  handleNavigate = (mealTypeId) => {
+    const locationId = sessionStorage.getItem("locationId");
+    if (locationId) {
+      this.props.history.push(
+        `/filter?mealtypes=${mealTypeId}&location=${locationId}`
+      );
+    } else {
+      this.props.history.push(`/filter?mealtypes=${mealTypeId}`);
     }
+  };
 
-    render() {
-        return (
-            <div>
-                <div class="container">
-                <div class="row">   
-                <div class="col-lg-4 col-md-6 col-sm-12" >
-                    <div class="rectangle-sec" >
-                        <div class="img-sec">
-                            <img src="../Assets/breakfast.jpg" alt="" srcset=""/>
-                        </div>
-                        <div class="text-sec">
-                            <h3  class="text-1">Breakfast</h3>
-                            <p class="text-2">Start  your day with exclusive breakfast options</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="rectangle-sec ">
-                        <div class="img-sec">
-                            <img src="../Assets/lunch.jpg" alt="" srcset=""/>
-                        </div>
-                        <div class="text-sec">
-                            <h3  class="text-1">Lunch</h3>
-                            <p class="text-2">Start  your day with exclusive breakfast options</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="rectangle-sec "> 
-                        <div class="img-sec">
-                        <img src="../Assets/snacks.png" alt="" srcset=""/>
-                    </div>
-                    <div class="text-sec">
-                        <h3  class="text-1">snacks</h3>
-                        <p class="text-2">Start  your day with exclusive breakfast options</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="rectangle-sec  "> 
-                        <div class="img-sec">
-                        <img src="../Assets/dinner.png" alt="" srcset=""/>
-                        </div>
-                        <div class="text-sec">
-                            <h3  class="text-1">dinner</h3>
-                            <p class="text-2">Start  your day with exclusive breakfast options</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="rectangle-sec">
-                        <div class="img-sec">
-                            <img src="../Assets/drinks.png" alt="" srcset=""/>
-                        </div>
-                        <div class="text-sec">
-                            <h3  class="text-1">Drink</h3>
-                            <p class="text-2">Start  your day with exclusive breakfast options</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="rectangle-sec ">
-                        <div class="img-sec">     
-                            <img src="../Assets/nightlife.png" alt="" srcset=""/>
-                        </div>
-                        <div class="text-sec">
-                            <h3  class="text-1">Breakfast</h3>
-                            <p class="text-2">Start  your day with exclusive breakfast options</p>
-                        </div>
-                    </div>
-                </div>  
+  render() {
+    const { quickSearchItem } = this.props;
+    return (
+      <div
+        className="col-sm-12 col-md-12 col-lg-4"
+        onClick={() => this.handleNavigate(quickSearchItem.meal_type)}
+      >
+        <div className="rectangle-sec">
+          <div className="img-sec">
+            <img src={`./${quickSearchItem.image}`} alt="" srcset="" />
+          </div>
+          <div className="text-sec">
+            <h3 className="text-1">{quickSearchItem.name}</h3>
+            <p className="text-2">{quickSearchItem.content}</p>
+          </div>
         </div>
-</div>
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default withRouter(QuickSearchItem);

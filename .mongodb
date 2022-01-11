@@ -1,0 +1,1 @@
+mongoexport --uri mongodb+srv://SainathJalnila:<PASSWORD>@cluster0.bjk7t.mongodb.net/<DATABASE> --collection <COLLECTION> --type <FILETYPE> --out <FILENAME>
