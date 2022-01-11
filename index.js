@@ -4,7 +4,7 @@ let mongo = require('mongoose');
 let cors = require('cors');
 
 let app = express();
-const port = process.env.PORT || 4545; 
+const port = process.env.PORT || 7845; 
 
 const atlasDbUrl = 'mongodb+srv://SainathJalnila:Honda7440@cluster0.bjk7t.mongodb.net/ZomatoClone?retryWrites=true&w=majority';
 
