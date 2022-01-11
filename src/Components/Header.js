@@ -122,7 +122,7 @@ class Header extends react.Component{
             <div>
                 <div className="navbar pt-0">
                         <div  className="nav-logo">
-                            <b className="small-logo" >e!</b>
+                            <a className="small-logo" href='/'>e!</a>
                         </div>
                         {!isLoggedIn ?
                         <div className="op-btn-f">
