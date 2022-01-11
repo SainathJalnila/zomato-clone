@@ -5,7 +5,7 @@ let cors = require('cors');
 
 let app = express();
 let port = process.env.PORT || 5456;
-let hostname =  "localhost";
+
 const atlasDbUrl = 'mongodb+srv://SainathJalnila:Honda7440@cluster0.bjk7t.mongodb.net/ZomatoClone?retryWrites=true&w=majority';
 
 
@@ -20,6 +20,6 @@ mongo.connect( atlasDbUrl,{
     {
         app.listen(port, hostname ,()=>
 {
-    console.log(`Server has started ${port} ${hostname}`);
+    console.log(`Server has started ${port} `);
 })
     }).catch(err => console.log(err));
